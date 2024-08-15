@@ -128,9 +128,10 @@ public class tareaBot extends TelegramLongPollingBot {
     }
 
     private static final List<Long> listaChatIds = List.of(
-            6699823249L,
-            5792621349L,
-            6108736830L
+            6699823249L, //Nayeli.
+            5792621349L, //Edgar.
+            6108736830L, //Marvin.
+            6602268509L //Manuel.
     );
 
     private String MMfecha() {
