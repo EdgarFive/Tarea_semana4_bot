@@ -15,7 +15,6 @@ public class Main {
         try{
 
             TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
-            //PokemonBot poke = new PokemonBot();
             tareaBot tare = new tareaBot();
 
             botsApi.registerBot(tare);
