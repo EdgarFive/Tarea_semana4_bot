@@ -45,6 +45,12 @@ public class tareaBot extends TelegramLongPollingBot {
             String message_text = update.getMessage().getText();
             long chat_id = update.getMessage().getChatId();
 
+
+            //manejo de mensajes
+            if(message_text.toLowerCase().equals("/start")){
+                sendText(chat_id,"Hola "+nombre+"\nComandos que puedes usar:\n/info\n/progra\n/hola\n/cambio\n/grupal");
+            }
+
             //manejo de mensajes
             if(message_text.toLowerCase().equals("hola")){
                 sendText(chat_id,"Hola "+nombre+"\nComandos que puedes usar:\n/info\n/progra\n/hola\n/cambio\n/grupal");
@@ -128,10 +134,12 @@ public class tareaBot extends TelegramLongPollingBot {
     }
 
     private static final List<Long> listaChatIds = List.of(
-            6699823249L, //Nayeli.
             5792621349L, //Edgar.
+            6699823249L, //Nayeli.
             6108736830L, //Marvin.
-            6602268509L //Manuel.
+            6602268509L, //Manuel.
+            5454689659L, //Alejandro.
+            5747730047L //Yurgen.
     );
 
     private String MMfecha() {
